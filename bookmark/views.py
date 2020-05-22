@@ -24,4 +24,4 @@ class BookmarkUpdateView(UpdateView):
     model = Bookmark
     fields = ['site_name','url'] #<form>
     template_name_suffix =  '_update' #bookmark_update.html
-    #success_url = reverse_lazy('boo')
+    #success_url = reverse_lazy('bookmark:list')
