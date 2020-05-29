@@ -1,8 +1,6 @@
-<html>
-<head>
-    <title>Bookmark List</title>
-</head>
-<body>
+{% extends 'base.html' %}
+{% block title %}List{% endblock %}
+{% block content %}
 <a href="{% url 'bookmark:add' %}">Add Bookmark</a> <!-- 절대주소 말고 상대주소로 쓰기 -->
 <p></p>
 
@@ -28,5 +26,4 @@
         {% endfor %}
     </tbody>
 </table>
-</body>
-</html>
+{% endblock %}

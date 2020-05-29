@@ -1,14 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Bookmark Add</title>
-</head>
-<body>
+{% extends 'base.html' %}
+{% block title %}create{% endblock %}
+{% block content %}
 <form action="" method="post">
     {% csrf_token %} <!-- 누군가 나의 디비를 마음대로 쓸 수 없게 -->
     {{ form.as_p }}  <!-- views에 있는 site name과 url이 자동으로 들어감 -->
     <input type="submit" value="Add bookmark">
 </form>
-</body>
-</html>
+    <button onclick="history.back()">Cancle</button>
+{% endblock %}
