@@ -4,7 +4,7 @@
 - bookmark 앱 만들기
 - models Bookmark 만들기
 - admin Bookmark 등록하기
-- python manage.py makemigreations bookmark
+- on manage.py makemigreations bookmark
 - python manage.oy migrate
 - python manage.py createsuperuser
 - models Bookmark __str__() 출력하는 문구 설정
@@ -21,3 +21,5 @@
 - modify bookmark_list detail link
 - update : views BookmarkUpdateView, templates bookmark_update.html, urls, modify Modify link
 - delete : views BookmarkDeleteView, templates bookmark_confirm_delete.html, urls, modify Delete link
+- Cancle button 만들기, base.html 확장하기, bootstrap 적용하기
+- pagination views,base.html, bookmark_list.html
